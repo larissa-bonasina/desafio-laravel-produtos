@@ -14,21 +14,21 @@ class ProdutoController extends Controller
     {
         $query = Produto::with('categoria');
 
-        // Busca por nome ou SKU
+
         if ($request->filled('search')) {
             $search = $request->search;
             $query->where(function ($q) use ($search) {
                 $q->where('nome', 'like', "%{$search}%")
-                  ->orWhere('sku', 'like', "%{$search}%");
+                    ->orWhere('sku', 'like', "%{$search}%");
             });
         }
 
-        // Filtro por categoria
+
         if ($request->filled('categoria_id')) {
             $query->where('categoria_id', $request->categoria_id);
         }
 
-        // Filtro por status (ativo / inativo)
+
         if ($request->filled('ativo')) {
             $query->where('ativo', $request->ativo);
         }

@@ -4,10 +4,10 @@
     <div class="max-w-lg mx-auto bg-white shadow rounded-lg p-6">
 
         <h1 class="text-2xl font-semibold text-gray-800 mb-6">
-            ✏️ Editar Categoria
+            Editar Categoria
         </h1>
 
-        {{-- Erros de validação --}}
+
         @if ($errors->any())
             <div class="mb-4 rounded bg-red-100 border border-red-400 text-red-800 px-4 py-3">
                 <ul class="list-disc list-inside">

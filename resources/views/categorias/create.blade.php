@@ -7,7 +7,7 @@
             ➕ Nova Categoria
         </h1>
 
-        {{-- Erros de validação --}}
+        
         @if ($errors->any())
             <div class="mb-4 rounded bg-red-100 border border-red-400 text-red-800 px-4 py-3">
                 <ul class="list-disc list-inside">
