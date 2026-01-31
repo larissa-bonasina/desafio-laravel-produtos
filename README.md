@@ -57,7 +57,7 @@ O projeto contempla validações, relacionamento entre entidades, interface esti
 
 ## Como executar o projeto?
 
-### Clonar o repositório
+### 
 ```bash
 git clone https://github.com/larissa-bonasina/desafio-laravel-produtos.git
 cd desafio-laravel-produtos
