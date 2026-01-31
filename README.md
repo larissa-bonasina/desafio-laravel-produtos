@@ -17,7 +17,7 @@
 
 Sistema simples de cadastro e gerenciamento de **produtos** e **categorias**, desenvolvido como **desafio técnico** utilizando **Laravel 12**, **Blade**, **MySQL** e **Tailwind CSS**.
 
-O projeto contempla validações, relacionamento entre entidades, interface estilizada e funcionalidades diferenciais solicitadas no desafio.
+O projeto têm validações, relacionamento entre entidades, interface estilizada e funcionalidades diferenciais solicitadas no desafio.
 
 ---
 
