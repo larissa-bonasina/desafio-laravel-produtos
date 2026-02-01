@@ -13,7 +13,7 @@
 <body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
 
 
-    <header class="bg-indigo-600 text-white shadow">
+    <header class="bg-blue-600 text-white shadow">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-xl font-semibold">
                 Sistema de Controle

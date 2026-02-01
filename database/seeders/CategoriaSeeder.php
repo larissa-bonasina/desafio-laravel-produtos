@@ -14,6 +14,12 @@ class CategoriaSeeder extends Seeder
             ['nome' => 'Roupas', 'ativo' => true],
             ['nome' => 'Alimentos', 'ativo' => true],
             ['nome' => 'Livros', 'ativo' => true],
+            ['nome' => 'Brinquedos', 'ativo' => true],
+            ['nome' => 'Móveis', 'ativo' => true],
+            ['nome' => 'Beleza', 'ativo' => true],
+            ['nome' => 'Esportes', 'ativo' => true],
+            ['nome' => 'Saúde', 'ativo' => true],
+            ['nome' => 'Ferramentas', 'ativo' => true],
         ];
 
         foreach ($categorias as $categoria) {
