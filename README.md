@@ -5,30 +5,28 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Laravel-12.x-red" />
-  <img src="https://img.shields.io/badge/PHP-8.2-blue" />
-  <img src="https://img.shields.io/badge/TailwindCSS-3.x-cyan" />
-  <img src="https://img.shields.io/badge/MySQL-Database-orange" />
+  <img src="https://img.shields.io/badge/Laravel-12.x-red">
+  <img src="https://img.shields.io/badge/PHP-8.2-blue">
+  <img src="https://img.shields.io/badge/TailwindCSS-3.x-cyan">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange">
 </p>
-
----
 
 # Sistema de Cadastro de Produtos
 
-Sistema simples de cadastro e gerenciamento de **produtos** e **categorias**, desenvolvido como **desafio técnico** utilizando **Laravel 12**, **Blade**, **MySQL** e **Tailwind CSS**.
+Sistema simples de cadastro e gerenciamento de produtos e categorias, desenvolvido como **desafio técnico** utilizando **Laravel 12, Blade, MySQL e Tailwind CSS**.
 
-O projeto têm validações, relacionamento entre entidades, interface estilizada e funcionalidades diferenciais solicitadas no desafio.
+O projeto possui validações, relacionamento entre entidades, interface estilizada e funcionalidades diferenciais solicitadas no desafio.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-- Laravel 12  
-- PHP 8.2  
-- MySQL  
-- Blade  
-- Tailwind CSS  
-- Vite  
+- **Laravel 12**
+- **PHP 8.2**
+- **MySQL**
+- **Blade**
+- **Tailwind CSS**
+- **Vite**
 
 ---
 
@@ -36,43 +34,72 @@ O projeto têm validações, relacionamento entre entidades, interface estilizad
 
 ### Produtos
 - Listagem de produtos com paginação
-- Cadastro de produto
-- Edição de produto
-- Exclusão de produto
-- Soft delete
-
-### Validações
-- Nome obrigatório
-- SKU único
-- Preço maior que zero
-- Quantidade em estoque maior ou igual a zero
-
-### Extras 
+- Cadastro, edição e exclusão de produtos
+- Validações:
+  - Nome obrigatório
+  - SKU único
+  - Preço > 0
+  - Quantidade em estoque ≥ 0
 - Relacionamento com categorias
 - Busca por nome ou SKU
 - Filtro por categoria
-- Confirmação antes de excluir registros
+- Confirmação antes de excluir
+- Soft delete (restauração de produtos)
+
+### Categorias
+- CRUD completo de categorias
+- Não permite excluir categoria com produtos vinculados
+- Validação de nome obrigatório
 
 ---
 
-## Como executar o projeto?
+## Screenshots da Aplicação
 
-### 
+### Dashboard
+<p align="center">
+  <img src="public/prints/principal.png" alt="Dashboard" width="700">
+</p>
+
+### Cadastro de Novo Produto
+<p align="center">
+  <img src="public/prints/novo_produto.png" alt="Novo Produto" width="700">
+</p>
+
+### Listagem de Categorias
+<p align="center">
+  <img src="public/prints/categorias.png" alt="Categorias" width="700">
+</p>
+
+### Cadastro de Nova Categoria
+<p align="center">
+  <img src="public/prints/nova_categoria.png" alt="Nova Categoria" width="700">
+</p>
+
+---
+
+## Como executar o projeto
+
 ```bash
+# Clonar o repositório
 git clone https://github.com/larissa-bonasina/desafio-laravel-produtos.git
 cd desafio-laravel-produtos
 
-Instalar dependências:
+# Instalar dependências PHP
 composer install
-npm install
-npm run build
 
-Configurar o ambiente:
+# Configurar ambiente
 cp .env.example .env
+# Ajuste as variáveis do banco de dados MySQL no arquivo .env
 
-Rodar migrations e seeders:
+# Gerar a chave da aplicação
+php artisan key:generate
+
+# Rodar migrations e seeders 
 php artisan migrate --seed
 
-Iniciar o servidor:
+# Rodar o servidor local
 php artisan serve
 
+# No VSCode rode para Tailwind e Vite
+npm install
+npm run dev
